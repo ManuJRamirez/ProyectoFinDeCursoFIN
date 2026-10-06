@@ -1,0 +1,128 @@
+
+**********************************************************************************************************************************
+															HEROES
+**********************************************************************************************************************************
+
+-> ELFO:
+	* Arqueros:
+		+ Bonus ataque 25% vs voladores.
+		+ Bonus 100% ataque, 100% defensa cuando ataca desde la ciudad hacia una unidad enemiga fuera de la ciudad (uso de murallas).
+		+ No puede andar por montañas ni rios.
+	
+	* Guerrero:
+		+ Bonus de 20% de defensa, cuando esta defendiendo su ciudad (Heroes).
+		+ Bonus ataque 10% vs Orcos.
+		+ No puede andar por montañas ni rios.
+		
+	* Mago:
+		+ Bonus ataque 25% vs voladores.
+		+ Bonus 50% ataque, 100% defensa cuando ataca desde la ciudad hacia una unidad enemiga fuera de la ciudad (uso de murallas).
+		+ No puede andar por montañas ni rios.
+		
+-> HUMANO:
+	* Guerrero:
+		+ Bonus de 20% defensa, cuando esta defendiendo su ciudad (Heroes).
+		+ Bonus ataque 15% vs Trasgos.
+		+ No puede andar por montañas ni rios.
+	
+	* Caballeria:
+		+ Bonus ataque 30% vs exploradores en terreno LLANO.
+		+ Bonus ataque 25% vs Huruk Hai en terreno LLANO.
+		+ Bonus ataque 25% vs Orcos en terreno LLANO.
+		+ Bonus ataque 25% vs Trasgos en terreno LLANO.
+		+ Bonus ataque 35% vs Arqueros en terreno LLANO.
+		+ Penalizacion ataque 35% en terreno ciudad. Es decir, recibe la penalización cuando está combatiendo dentro de una ciudad.
+		+ No puede andar por montañas ni rios.
+		+ No puede atacar desde fuera de la ciudad a una unidad dentro de la ciudad. Debe estar dentro de la ciudad para atacar a una unidad dentro de la ciudad.
+		
+	* Mago:
+		+ Bonus ataque 25% vs exploradores.
+		+ Bonus 50% ataque, 100% defensa cuando ataca desde la ciudad hacia una unidad enemiga fuera de la ciudad (uso de murallas).
+		+ Probabilidad del 10% de restaurar un 10% de vida a las unidades aliadas que esten en su rango de ataque, al finalizar su turno (el turno de los Heroes).
+		+ No puede andar por montañas ni rios.
+		
+-> HOBBIT:
+	* Frodo:
+		+ Bonus ataque contra explorador del 100%. Si Sam está en un rango de 4 casillas, bonus del 200%.
+		+ Siempre juega, lo elija el humano o no.
+		+ Unidad invisible solo localizable por voladores y exploradores. Si es detectada, todo el bando enemigo la ve, y sabe donde está mientras el volador/explorador este en el rango de deteccion. 
+			Si Frodo deja de moverse durante 2 turnos, se volveria invisible de nuevo, pero si se mueve y el explorador/volador esta en rango de deteccion seria detectado de nuevo.
+		+ Si llega a la ciudad "Monte del Destino", se acaba la partida y ganan los Heroes.
+		+ Las unidades voladores no pueden atacarlo, pero si descubrirlo.
+		+ Si muere se acaba la partida y las Bestias ganan.
+		+ Puede andar por montañas y rios pero perdiendo 2 de movilidad en montaña y 3 de movilidad en rio.
+		+ No puede atacar a Nazgul.
+		+ Si ataca pierde la invisibilidad.
+		+ Pierde la invisibilidad cuando entra en la ciudad "Monte del Destino".
+	
+	* Sam:
+		+ Bonus de ataque contra explorador del 100%. Si Frodo esta en un rango de 4 casillas, bonus del 200%.
+		+ Unidad invisible solo localizable por voladores y exploradores. Si es detectada, todo el bando enemigo la ve, y sabe donde está mientras el volador/explorador este en el rango de deteccion. 
+			Si Sam deja de moverse durante 2 turnos, se volveria invisible de nuevo, pero si se mueve y el explorador/volador esta en rango de deteccion seria detectado de nuevo.
+		+ Las unidades voladores no pueden atacarlo, pero si descubrirlo.
+		+ Puede andar por montañas y rios pero perdiendo 2 de movilidad en montaña y 3 de movilidad en rio.	
+		+ No puede atacar a Nazgul.
+		+ Si ataca pierde la invisibilidad.
+		+ Pierde la invisibilidad cuando entra en la ciudad "Monte del Destino".
+
+**********************************************************************************************************************************
+															BESTIAS
+**********************************************************************************************************************************
+
+-> UrukHai:
+	* Guerrero:
+		+ Bonus de 20% ataque contra Guerrero Elfo en terreno LLANO.
+		+ Bonus de 20% ataque contra Guerrero Humano en terreno LLANO.
+		+ Bonus de 10% ataque contra todas las unidades Heroes (menos Hobbit) cuando estan atacando una ciudad dominada por Heroes y han conseguido entrar dentro de la ciudad. Es decir, 
+			estan atacando a las unidades Heroes que estan dentro de la ciudad, desde dentro de la ciudad.
+		+ No pueden andar por montañas ni rios.
+	
+	+ Arquero:
+		+ Bonus de 10% ataque contra Guerrero Elfo.
+		+ Bonus de 10% ataque contra Guerrero Humano.
+		+ No puede andar por montañas ni rios.
+		+ Bonus 100% ataque, 100% defensa cuando ataca desde la ciudad hacia una unidad enemiga fuera de la ciudad (uso de murallas).
+
+-> Orco:
+	* Guerrero:
+		+ Bajan la defensa del enemigo un 10% cuando realizan el ataque.
+		+ No puede andar por montañas ni rios.
+	
+	* Caballeria:
+		+ Bajan la defensa del enemigo un 10% cuando realizan el ataque.
+		+ Bonus de ataque del 20% contra Arquero Elfo en terreno LLANO.
+		+ Penalizacion ataque del 35% cuando esta unidad esta combatiendo dentro de una ciudad.
+		+ No puede andar por montañas ni rio.
+		+ No puede atacar desde fuera de la ciudad a una unidad dentro de la ciudad. Debe estar dentro de la ciudad para atacar a una unidad dentro de la ciudad.
+	
+	* Arquero:
+		+ Bajan la defensa del enemigo un 10% cuando realizan el ataque.
+		+ Bonus 100% ataque, 100% defensa cuando ataca desde la ciudad hacia una unidad enemiga fuera de la ciudad (uso de murallas).
+		+ No puede andar por montañas ni rios.
+				
+-> Trasgo:
+	* Guerrero:
+		+ Tienen un 25% de probabilidad de curarse un 15% de su vida al finalizar su turno (turno de las Bestias).
+		+ No pueden andar por montañas ni rios.
+	
+	*Explorador:
+		+ Unidad capaz de detectar a los Hobbits.
+		+ Pueden andar por montañas con una penalizacion de movimiento de 3. 
+		+ Rango normal de detección de 2.
+		+ Penalizcion del campo de deteccion en montaña reduciendose a 1.
+		+ No pueden andar por rios.
+
+-> Nazgul:
+	* Volador:
+		+ Unidad capaz de detectar a los Hobbits.
+		+ Rango de deteccion normal es 3.
+		+ Rango de deteccion en montaña 1.
+		+ No puede atacar a Hobbit.
+		+ No puede conquistar ninguna ciudad.
+		+ Puede andar por cualquier zona del mapa.
+		+ Bonus de ataque del 50% contra cualquier unidad de los Heroes (excepto Hobbits) en terreno llano.
+		+ Puede moverse, atacar y tener un segundo movimiento de 2 casillas maximo.
+		+ Bonus defensa del 80% contra unidades que no sean Arquero o Mago.
+		
+		
+	

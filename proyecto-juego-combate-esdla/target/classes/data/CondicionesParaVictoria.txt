@@ -1,0 +1,31 @@
+********************************************************************************************************************
+************************************ CONDICIONES PARA LA VICTORIA **************************************************
+********************************************************************************************************************
+
+Para que se producta una victoria deben ocurrir 4 condiciones:
+	-> 1º: Por conquista. Gana el primer bando que capture todas las ciudades.
+	-> 2ª: Gana el equipo que más puntos tenga al finalizar los turnos. Minimo 50 turnos.
+			Si selecciono esta opción, debo seleccionar al menos una de las otras condiciones. Esto debe ser así para que cumplir un limite de puntos, o defender a Frodo, 
+			o tener que llegar con Frodo al Monte del Destino y esperar los 3 turnos sin ser atacado, sea el reto de conseguir ese objetivo en un número máximo de turnos. 
+			Si no pusieramos una se las otras condiciones, al finalilzar los turnos no se lucharía por ningun objetivo.
+	-> 3ª: Gana el equipo que llegue antes al limite de puntos seleccionado. Minimo 50 puntos.
+			Esta condición puede ir acompañada de otra, o sola.
+	-> 4ª: Ganan los heroes si "Frodo" llega a la ciudad "Monte del destino" y se mantiene dentro 3 turnos sin ser atacado.
+			Esta condicion debe ir acompañada de otra, al menos por la condicion de frodo eliminado.
+	-> 5ª: Ganan las Bestias si consiguen eliminar a "Frodo".
+			Esta condición obligará a seleccionar una de las otras. Porque sino las partidas sería eternas y con el hecho de ir moviendo a Frodo de forma invisible y eliminar a los voladores
+			y rastreadores, nunca sabrian donde está. Por lo que la partida seria infinita. Para evitar esto, se obliga a elegir una de las otras tres condiciones.
+	
+	
+	hay que corregir primero las condiciones de victoria. 
+	Estan mal. Por ejemplo si seleccionio, por limite de turnos y puntos funciona correctamente. 
+	Si selecciono por limite de turnos y frodo en monte del destino, vuelve a mirar los puntos cuando no es asi. 
+	Si se acaban los turnos y no ha llegado al monte del destino, ganan las bestias. 
+	Igual pasa cuando se selecciona el limite de turnos y eliminar a frodo. 
+	Si se acaban los turnos y frodo sigue vivo, ganan los heroes. 
+	En cambio si se selecciona limite de turnos y frodo en el monte del destino y eliminar a frodo y se agotan los turnos, seria un empate. 
+	Si se selecciona limite de turnos y dominio, gana el que mas ciudades tenga al finalizar los turnos. 
+	Si se selecciona limite de turnos, frodo en el monte del destino, frodo eliminado y dominio y se agotan los turnos, ganara el que mas ciudades tenga (dominio). 
+	Si se seleccionan todas las condiciones, limite de turnos, limite de puntos, frodo en el monte del destino, frodo eliminado y dominio, cuando se acaben los turnos, 
+		primero se revisaran los puntos, si tienen los mismo puntos, se verificara quien tiene mas ciudades y si tienen las mismas sera definitivamente empate. 
+		No hace falta revisar si frodo en el monte del destino o si frodo eliminado porque estas condiciones son victoria inmediate. 
